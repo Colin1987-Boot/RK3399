@@ -65,6 +65,7 @@ function sync_repo(){
 
 		cd $repo_name
 		echo "start syncing $repo_name"
+		git pull
 		if [ $path_github != "none" ]; then
 			remote_github="`git remote -v | grep github`"
 			if [ -z "$remote_github" ]; then
