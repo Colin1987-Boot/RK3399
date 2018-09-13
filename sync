@@ -33,7 +33,7 @@ rk_pcba_test			linux/external/rk_pcba_test		rk_pcba_test		linux/external/rk_pcba
 bin				linux/security/bin			bin			linux/security/bin			master
 rk_tee_user			android/rk/platform/system/rk_tee_user	rk_tee_user		android/rk/platform/system/rk_tee_user	develop-next
 rkbin				rk/rkbin				rkbin			rk/rkbin				master
-# rknpu				linux/external/rknpu			rknpu			linux/external/rknpu			master
+# rknpu				linux/external/rknpu			none			linux/external/rknpu			master
 rkssd				linux/external/rkssd			rkssd			linux/external/rkssd			master
 rkupdate			linux/external/rkupdate			rkupdate		linux/external/rkupdate			master
 rkwifibt			linux/external/rkwifibt			rkwifibt		linux/external/rkwifibt			master
@@ -92,6 +92,8 @@ function sync_repo(){
 
 while true
 do
+	echo "#################start syncing all repo#####################"
 	sync_repo
+	echo "################finish syncing all repo#####################"
 	sleep 1h
 done
