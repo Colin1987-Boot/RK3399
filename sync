@@ -92,5 +92,5 @@ function sync_repo(){
 while true
 do
 	sync_repo
-	sleep 1m
+	sleep 1h
 done
