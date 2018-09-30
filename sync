@@ -18,7 +18,7 @@ gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu	rk/prebuilts/gcc-linaro-6.3.1-
 gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf	rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf	gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf	rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf	master
 gstreamer-camera		linux/external/gstreamer-camera		gstreamer-camera	linux/external/gstreamer-camera		master
 gstreamer-rockchip		linux/gstreamer-rockchip		gstreamer-rockchip	linux/gstreamer-rockchip		master
-kernel				rk/kernel				kernel			rk/kernel				develop-4.4
+# kernel				rk/kernel				kernel			rk/kernel				develop-4.4
 libdrm-rockchip			linux/libdrm-rockchip			libdrm-rockchip		linux/libdrm-rockchip			rockchip-2.4.68
 libmali				linux/libmali				libmali			linux/libmali				master
 linux-rga			linux/linux-rga				linux-rga		linux/linux-rga				master
@@ -44,7 +44,7 @@ softapServer			linux/external/softapServer		softapServer		linux/external/softapS
 wifiAutoSetup			linux/external/wifiAutoSetup		wifiAutoSetup		linux/external/wifiAutoSetup		master
 tensorflow			linux/external/tensorflow		tensorflow		linux/external/tensorflow		master
 tools				linux/tools				tools			linux/tools				master
-u-boot				android/rk/u-boot			u-boot			android/rk/u-boot			next-dev
+# u-boot				android/rk/u-boot			u-boot			android/rk/u-boot			next-dev
 video				linux/app/video				video			linux/app/video				master
 )
 
@@ -92,8 +92,10 @@ function sync_repo(){
 
 while true
 do
-	echo "#################start syncing all repo#####################"
+	echo -n "start syncing all repo at: "
+	date
 	sync_repo
-	echo "################finish syncing all repo#####################"
+	echo -n "finish syncing all repo at: "
+	date
 	sleep 1h
 done
