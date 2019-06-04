@@ -1,19 +1,26 @@
 #!/bin/bash
+SYNC_DIR=$(dirname $(realpath "$0"))
+echo "sync dir: $SYNC_DIR"
 repo_array=(
 #repo name			29 path					github path		211 path				branch
 LocalPlayer			linux/external/LocalPlayer		LocalPlayer		linux/external/LocalPlayer		master
-QLauncher			linux/app/QLauncher			QLauncher		linux/app/QLauncher			master
+QLauncher			linux/app/QLauncher			QLauncher		linux/app/QLauncher			develop
 adb				linux/external/adb			none			linux/external/adb			master
 adk				rk/rk1108/framework/adk			none			rk/rk1108/framework/adk			master
+at_server			rk/rk1108/apps/at_server		none			rk/rk1108/apps/at_server		master
 avb				linux/external/avb			none			linux/external/avb			master
 alsa-config			linux/external/alsa-config		alsa-config		linux/external/alsa-config		master
 alsa-lib			linux/external/alsa-lib			none			linux/external/alsa-lib			master
 alsa-plugins			linux/external/alsa-plugins		none			linux/external/alsa-plugins		master
 alsa-utils			linux/external/alsa-utils		none			linux/external/alsa-utils		master
 audioservice			linux/external/audioservice		audioservice		linux/external/audioservice		master
+bin                             linux/security/bin                      bin                     linux/security/bin                      master
+bluez-alsa			linux/external/bluez-alsa		bluez-alsa		linux/external/bluez-alsa		master
+bsdiff				rk/rk1108/external/bsdiff		none			rk/rk1108/external/bsdiff		master
 build				rk/rk1108/build				none			rk/rk1108/build				master
 buildroot			rk/rk1108/buildroot			buildroot		rk/rk1108/buildroot			rockchip/2018.02-rc3
 buildroot-2016			rk/rk1108/buildroot-2016		none			rk/rk1108/buildroot-2016		master
+bzip2				rk/rk1108/external/bzip2		none			rk/rk1108/external/bzip2		master
 camera				linux/app/camera			camera			linux/app/camera			master
 camera_engine_cifisp		linux/external/camera_engine_cifisp	camera_engine_cifisp	linux/external/camera_engine_cifisp	master
 camera_engine_rkisp		linux/external/camera_engine_rkisp	camera_engine_rkisp	linux/external/camera_engine_rkisp	master
@@ -21,6 +28,7 @@ cjson				rk/rk1108/external/cjson		none			rk/rk1108/external/cjson		master
 common				rk/rk1108/common			none			rk/rk1108/common			master
 config				rk/rk1108/config			none			rk/rk1108/config			master
 database			rk/rk1108/framework/database		none			rk/rk1108/framework/database		master
+demo				linux/app/demo				demo			linux/app/demo				master
 distro				linux/distro				distro			linux/distro				master
 dl				linux/buildroot/dl			dl			linux/buildroot/dl			master
 dnsmasq				rk/rk1108/external/dnsmasq		none			rk/rk1108/external/dnsmasq		master
@@ -33,8 +41,12 @@ io				rk/rk1108/external/io			none			rk/rk1108/external/io			master
 gallery				linux/app/gallery			gallery			linux/app/gallery			master
 gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu	rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu		gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu	rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu		master
 gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf	rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf	gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf	rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf	master
+gst-plugins-rockchip		linux/external/gst-plugins-rockchip	gst-plugins-rockchip	linux/external/gst-plugins-rockchip	master
 gstreamer-camera		linux/external/gstreamer-camera		gstreamer-camera	linux/external/gstreamer-camera		master
 gstreamer-rockchip		linux/gstreamer-rockchip		gstreamer-rockchip	linux/gstreamer-rockchip		master
+hal				rk/rk1108/framework/hal			none			rk/rk1108/framework/hal			master
+hello				rk/rk1108/apps/hello			none			rk/rk1108/apps/hello			master
+hello_rv			rk/rk1108/apps/hello_rv			none			rk/rk1108/apps/hello_rv			master
 kernel				rk/kernel				kernel			rk/kernel				develop-4.4
 kernel_1108			rk/rk1108/kernel			none			rk/rk1108/kernel			fastboot
 #kernel-stable-px30		rk/kernel-stable			none			rk/kernel-stable			stable-4.4-px30-linux
@@ -47,20 +59,26 @@ kernel-stable-rk3308		rk/kernel-stable			none			rk/kernel-stable			stable-4.4-rk
 loader				rk/rk1108/loader			none			rk/rk1108/loader			loader-emmc
 lock				rk/rk1108/apps/lock			none			rk/rk1108/apps/lock			master
 libcamerahal			rk/rk1108/external/libcamerahal		none			rk/rk1108/external/libcamerahal		master
-libcutils			linux/external/libcutils		none			linux/external/libcutils		master
+libcutils			linux/external/libcutils		libcutils		linux/external/libcutils		master
+libcurl				rk/rk1108/external/libcurl		none			rk/rk1108/external/libcurl		master
 libdrm				android/platform/external/libdrm	libdrm-rockchip		linux/libdrm-rockchip			rk33/mid/9.0/develop
 libion				rk/rk1108/external/libion		none			rk/rk1108/external/libion		master
 libjpeg				rk/rk1108/external/libjpeg		none			rk/rk1108/external/libjpeg		master
-liblog				linux/external/liblog			none			linux/external/liblog			master
+liblog				linux/external/liblog			liblog			linux/external/liblog			master
 libmali				linux/libmali				libmali			linux/libmali				master
-libminigui			rk/rk1108/external/libminigui		none			rk/rk1108/external/libminigui		master
+libminigui			rk/rk1108/external/libminigui		minigui			rk/rk1108/external/libminigui		master
 libnl				rk/rk1108/external/libnl		none			rk/rk1108/external/libnl		master
+libogg				rk/rk1108/external/libogg		none			rk/rk1108/external/libogg		master
 libpng				rk/rk1108/external/libpng		none			rk/rk1108/external/libpng		master
 librkfb				rk/rk1108/external/librkfb		none			rk/rk1108/external/librkfb		master
 librkrga			rk/rk1108/external/librkrga		none			rk/rk1108/external/librkrga		master
+librkuvc			rk/rk1108/framework/librkuvc		none			rk/rk1108/framework/librkuvc		master
 libts				rk/rk1108/external/libts		none			rk/rk1108/external/libts		master
+libvorbis			rk/rk1108/external/libvorbis		none			rk/rk1108/external/libvorbis		master
 libvpu				rk/rk1108/external/libvpu		none			rk/rk1108/external/libvpu		master
 linux-rga			linux/linux-rga				linux-rga		linux/linux-rga				master
+live555				rk/rk1108/external/live555		none			rk/rk1108/external/live555		master
+messenger			rk/rk1108/framework/messenger		none			rk/rk1108/framework/messenger		master
 minigui				linux/external/minigui			minigui			linux/external/minigui			master
 model_loader			rk/rk1108/framework/model_loader	none			rk/rk1108/framework/model_loader	master
 mpp				rk/mpp					mpp			rk/mpp					develop
@@ -68,6 +86,7 @@ mpv				linux/external/mpv			mpv			linux/external/mpv			rockchip/release/0.9
 music				linux/app/music				music			linux/app/music				master
 nanomsg				rk/rk1108/external/nanomsg		none			rk/rk1108/external/nanomsg		master
 openssl				rk/rk1108/external/openssl		none			rk/rk1108/external/openssl		master
+pcba_test			rk/rk1108/apps/pcba_test		none			rk/rk1108/apps/pcba_test		master
 prebuild-images			rk/rk1108/prebuild-images		none			rk/rk1108/prebuild-images		master
 prebuilds			rk/rk1108/prebuilds			none			rk/rk1108/prebuilds			master
 powermanager			linux/external/powermanager		powermanager		linux/external/powermanager		master
@@ -75,28 +94,33 @@ recovery			linux/recovery				recovery		linux/recovery				develop
 rk-rootfs-build			linux/rk-rootfs-build			rk-rootfs-build		linux/rk-rootfs-build			master
 rk_pcba_test			linux/external/rk_pcba_test		rk_pcba_test		linux/external/rk_pcba_test		master
 rkface				rk/rk1108/framework/rkface		none			rk/rk1108/framework/rkface		master
-bin				linux/security/bin			bin			linux/security/bin			master
+repo				tools/repo				repo			rk/tools/repo				stable
 rk_tee_user			android/rk/platform/system/rk_tee_user	rk_tee_user		android/rk/platform/system/rk_tee_user	develop-next
 rkbin				rk/rkbin				rkbin			rk/rkbin				master
 rkmedia				rkmedia					none			rkmedia					master
-rknn_demo			linux/external/rknn_demo		none			linux/external/rknpu			master
-rknpu				linux/external/rknpu			none			linux/external/rknpu			master
+rknn-toolkit			rk/rknn-toolkit				rknn-toolkit		rk/rknn-toolkit				master
+rknn_demo			linux/external/rknn_demo		rknn_demo		linux/external/rknn_demo		master
+rknpu				linux/external/rknpu			rknpu			linux/external/rknpu			master
 rkssd				linux/external/rkssd			rkssd			linux/external/rkssd			master
 rkupdate			linux/external/rkupdate			rkupdate		linux/external/rkupdate			master
 rkwifibt			linux/external/rkwifibt			rkwifibt		linux/external/rkwifibt			master
 rockchip			linux/device/rockchip			device-custom		linux/device/rockchip			master
 settings 			linux/app/settings			settings		linux/app/settings			master
+setting_rk1108			rk/rk1108/framework/settings		none			rk/rk1108/framework/settings		master
 softapDemo			linux/external/softapDemo		softapDemo		linux/external/softapDemo		master
 softapdemo_1108			rk/rk1108/external/softapdemo		none			rk/rk1108/external/softapdemo		master
 softapServer			linux/external/softapServer		softapServer		linux/external/softapServer		master
 softapserver_1108		rk/rk1108/external/softapserver		none			rk/rk1108/external/softapserver		master
 sqlite				rk/rk1108/external/sqlite		none			rk/rk1108/external/sqlite		master
+system_manager			rk/rk1108/apps/system_manager		none			rk/rk1108/apps/system_manager		master
 wpa_supplicant			rk/rk1108/external/wpa_supplicant	none			rk/rk1108/external/wpa_supplicant	master
 wifiAutoSetup			linux/external/wifiAutoSetup		wifiAutoSetup		linux/external/wifiAutoSetup		master
 tensorflow			linux/external/tensorflow		tensorflow		linux/external/tensorflow		master
 tools				linux/tools				tools			linux/tools				master
 tools_1108			rk/rk1108/tools				none			rk/rk1108/tools				master
+tools_1108_device		rk/rk1108/external/tools		none			rk/rk1108/external/tools		master
 u-boot				android/rk/u-boot			u-boot			android/rk/u-boot			next-dev
+updater				rk/rk1108/apps/updater			none			rk/rk1108/apps/updater			master
 uvc_app				rk/rk1108/apps/uvc_app			none			rk/rk1108/apps/uvc_app			master
 video				linux/app/video				video			linux/app/video				master
 zlib				rk/rk1108/external/zlib			none			rk/rk1108/external/zlib			master
@@ -117,7 +141,7 @@ function sync_repo(){
 			git clone ssh://10.10.10.29:29418/$path_29 -b $branch $repo_name
 		fi
 
-		cd $repo_name
+		cd $SYNC_DIR/$repo_name
 		echo "start syncing $repo_name"
 		git pull -f origin $branch:$branch
 
@@ -140,7 +164,7 @@ function sync_repo(){
 			git push -f server211 $branch:$branch
 			echo "sync $repo_name to server 211 done"
 		fi
-		cd ..
+		cd $SYNC_DIR
 	done
 }
 
