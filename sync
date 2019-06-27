@@ -74,6 +74,7 @@ librkfb				rk/rk1108/external/librkfb		none			rk/rk1108/external/librkfb		master
 librkrga			rk/rk1108/external/librkrga		none			rk/rk1108/external/librkrga		master
 librkuvc			rk/rk1108/framework/librkuvc		none			rk/rk1108/framework/librkuvc		master
 libts				rk/rk1108/external/libts		none			rk/rk1108/external/libts		master
+libv4l-rkmpp			linux/libv4l-rkmpp			libv4l-rkmpp		linux/libv4l-rkmpp			master
 libvorbis			rk/rk1108/external/libvorbis		none			rk/rk1108/external/libvorbis		master
 libvpu				rk/rk1108/external/libvpu		none			rk/rk1108/external/libvpu		master
 linux-rga			linux/linux-rga				linux-rga		linux/linux-rga				master
