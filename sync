@@ -172,6 +172,7 @@ function sync_repo(){
 
 while true
 do
+	git pull
 	echo -n "start syncing all repo at: "
 	date
 	sync_repo
