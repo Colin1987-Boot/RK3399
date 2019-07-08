@@ -36,6 +36,7 @@ docs				linux/docs				docs			linux/docs				master
 docs_1108			rk/rk1108/docs				none			rk/rk1108/docs				master
 face				rk/rk1108/apps/face			none			rk/rk1108/apps/face			master
 ffmpeg				linux/external/ffmpeg			ffmpeg			linux/external/ffmpeg			rockchip/release/4.0
+ffmpeg_1108			linux/external/ffmpeg			ffmpeg			linux/external/ffmpeg			rockchip/release/4.1
 freetype			rk/rk1108/external/freetype		none			rk/rk1108/external/freetype		master
 io				rk/rk1108/external/io			none			rk/rk1108/external/io			master
 gallery				linux/app/gallery			gallery			linux/app/gallery			master
@@ -58,7 +59,7 @@ kernel-stable-rk3308		rk/kernel-stable			none			rk/kernel-stable			stable-4.4-rk
 #kernel-stable-rk3328		rk/kernel-stable			none			rk/kernel-stable			stable-4.4-rk3328-linux
 kernel-stable-rk3399		rk/kernel-stable			kernel			rk/kernel-stable			stable-4.4-rk3399-linux-v2.1x
 kernel-stable-rk3399pro		rk/kernel-stable			kernel			rk/kernel-stable			stable-4.4-rk3399pro-linux
-loader				rk/rk1108/loader			none			rk/rk1108/loader			loader-emmc
+loader				rk/rk1108/loader			none			rk/rk1108/loader			loader
 lock				rk/rk1108/apps/lock			none			rk/rk1108/apps/lock			master
 libcamerahal			rk/rk1108/external/libcamerahal		none			rk/rk1108/external/libcamerahal		master
 libcutils			linux/external/libcutils		libcutils		linux/external/libcutils		master
