@@ -103,7 +103,7 @@ rkface				rk/rk1108/framework/rkface		none			rk/rk1108/framework/rkface		master
 repo				tools/repo				repo			rk/tools/repo				stable
 rk_tee_user			android/rk/platform/system/rk_tee_user	rk_tee_user		android/rk/platform/system/rk_tee_user	develop-next
 rkbin				rk/rkbin				rkbin			rk/rkbin				master
-rkmedia				rkmedia					none			rkmedia					master
+rkmedia				linux/rkmedia				none			linux/rkmedia				master
 rknn-toolkit			rk/rknn-toolkit				rknn-toolkit		rk/rknn-toolkit				master
 rknn_demo			linux/external/rknn_demo		rknn_demo		linux/external/rknn_demo		master
 rknpu				linux/external/rknpu			rknpu			linux/external/rknpu			master
