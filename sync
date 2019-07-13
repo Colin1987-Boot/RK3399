@@ -5,6 +5,7 @@ repo_array=(
 #repo name			29 path					github path		211 path				branch
 LocalPlayer			linux/external/LocalPlayer		LocalPlayer		linux/external/LocalPlayer		master
 QLauncher			linux/app/QLauncher			QLauncher		linux/app/QLauncher			develop
+SDL2                            linux/external/SDL2                     none                    linux/external/SDL2                     master
 adb				linux/external/adb			none			linux/external/adb			master
 adk				rk/rk1108/framework/adk			none			rk/rk1108/framework/adk			master
 at_server			rk/rk1108/apps/at_server		none			rk/rk1108/apps/at_server		master
@@ -100,6 +101,7 @@ recovery			linux/recovery				recovery		linux/recovery				develop
 rk-rootfs-build			linux/rk-rootfs-build			rk-rootfs-build		linux/rk-rootfs-build			master
 rk_pcba_test			linux/external/rk_pcba_test		rk_pcba_test		linux/external/rk_pcba_test		master
 rkface				rk/rk1108/framework/rkface		none			rk/rk1108/framework/rkface		master
+rkffplay			linux/app/rkffplay			none			linux/app/rkffplay			master
 repo				tools/repo				repo			rk/tools/repo				stable
 rk_tee_user			android/rk/platform/system/rk_tee_user	rk_tee_user		android/rk/platform/system/rk_tee_user	develop-next
 rkbin				rk/rkbin				rkbin			rk/rkbin				master
