@@ -40,7 +40,7 @@ ffmpeg				linux/external/ffmpeg			ffmpeg			linux/external/ffmpeg			rockchip/rele
 ffmpeg_1108			linux/external/ffmpeg			ffmpeg			linux/external/ffmpeg			rockchip/release/4.1
 freetype			rk/rk1108/external/freetype		none			rk/rk1108/external/freetype		master
 io				rk/rk1108/external/io			none			rk/rk1108/external/io			master
-gallery				linux/app/gallery			gallery			linux/app/gallery			develop
+gallery				linux/app/gallery			gallery			linux/app/gallery			master
 gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu	rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu		gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu	rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu		master
 gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf	rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf	gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf	rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf	master
 gst-plugins-rockchip		linux/external/gst-plugins-rockchip	gst-plugins-rockchip	linux/external/gst-plugins-rockchip	master
@@ -103,7 +103,7 @@ rk-rootfs-build			linux/rk-rootfs-build			rk-rootfs-build		linux/rk-rootfs-build
 rk_pcba_test			linux/external/rk_pcba_test		rk_pcba_test		linux/external/rk_pcba_test		master
 rkface				rk/rk1108/framework/rkface		none			rk/rk1108/framework/rkface		master
 rkffplay			linux/app/rkffplay			none			linux/app/rkffplay			master
-repo				tools/repo				repo			rk/tools/repo				stable
+repo				tools/repo				repo			none					stable
 rk_tee_user			android/rk/platform/system/rk_tee_user	rk_tee_user		android/rk/platform/system/rk_tee_user	develop-next
 rkbin				rk/rkbin				rkbin			rk/rkbin				master
 rkmedia				linux/rkmedia				none			linux/rkmedia				master
@@ -111,7 +111,7 @@ rknn-toolkit			rk/rknn-toolkit				rknn-toolkit		rk/rknn-toolkit				master
 rknn_demo			linux/external/rknn_demo		rknn_demo		linux/external/rknn_demo		master
 rknpu				linux/external/rknpu			rknpu			linux/external/rknpu			master
 rknpu-fw			linux/external/rknpu-fw		    	rknpu-fw		linux/external/rknpu-fw			master
-RKNPUTOOLs			linux/external/RKNPUTOOL	    	RKNPUTOOLs		linux/external/RKNPUTOOL	    rk/rk33/mid/8.1/develop
+RKNPUTOOLs			android/RKNPUTool		    	RKNPUTools		android/RKNPUTool			rk/rk33/mid/8.1/develop
 rkssd				linux/external/rkssd			rkssd			linux/external/rkssd			master
 rkupdate			linux/external/rkupdate			rkupdate		linux/external/rkupdate			master
 rkwifibt			linux/external/rkwifibt			rkwifibt		linux/external/rkwifibt			master
