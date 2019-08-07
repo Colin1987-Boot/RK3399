@@ -31,7 +31,7 @@ config				rk/rk1108/config			none			rk/rk1108/config			master
 database			rk/rk1108/framework/database		none			rk/rk1108/framework/database		master
 demo				linux/app/demo				demo			linux/app/demo				master
 distro				linux/distro				distro			linux/distro				master
-dl				linux/buildroot/dl			dl			linux/buildroot/dl			master
+dl				linux/buildroot/dl			none			linux/buildroot/dl			master
 dnsmasq				rk/rk1108/external/dnsmasq		none			rk/rk1108/external/dnsmasq		master
 docs				linux/docs				docs			linux/docs				master
 docs_1108			rk/rk1108/docs				none			rk/rk1108/docs				master
