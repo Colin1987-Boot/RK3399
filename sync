@@ -132,6 +132,7 @@ tools				linux/tools				tools			linux/tools				master
 tools_1108			rk/rk1108/tools				none			rk/rk1108/tools				master
 tools_1108_device		rk/rk1108/external/tools		none			rk/rk1108/external/tools		master
 u-boot				android/rk/u-boot			u-boot			android/rk/u-boot			next-dev
+update_engine			linux/external/update_engine		update_engine		linux/external/update_engine		master
 updater				rk/rk1108/apps/updater			none			rk/rk1108/apps/updater			master
 uvc_app				rk/rk1108/apps/uvc_app			none			rk/rk1108/apps/uvc_app			master
 vendor_storage			rk/rk1108/framework/vendor_storage	none			rk/rk1108/framework/vendor_storage	master
