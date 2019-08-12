@@ -45,7 +45,7 @@ gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu	rk/prebuilts/gcc-linaro-6.3.1-
 gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf	rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf	gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf	rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf	master
 gst-plugins-rockchip		linux/external/gst-plugins-rockchip	gst-plugins-rockchip	linux/external/gst-plugins-rockchip	master
 gstreamer-camera		linux/external/gstreamer-camera		gstreamer-camera	linux/external/gstreamer-camera		master
-gstreamer-rockchip		linux/gstreamer-rockchip		gstreamer-rockchip	linux/gstreamer-rockchip		master
+gstreamer-rockchip		linux/gstreamer-rockchip		none			linux/gstreamer-rockchip		master
 hal				rk/rk1108/framework/hal			none			rk/rk1108/framework/hal			master
 hello				rk/rk1108/apps/hello			none			rk/rk1108/apps/hello			master
 hello_rv			rk/rk1108/apps/hello_rv			none			rk/rk1108/apps/hello_rv			master
