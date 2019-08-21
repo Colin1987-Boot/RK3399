@@ -92,12 +92,13 @@ music				linux/app/music				music			linux/app/music				develop
 nanomsg				rk/rk1108/external/nanomsg		none			rk/rk1108/external/nanomsg		master
 openssl				rk/rk1108/external/openssl		none			rk/rk1108/external/openssl		master
 pcba_test			rk/rk1108/apps/pcba_test		none			rk/rk1108/apps/pcba_test		master
-peephole			rk/rk1108/apps/peephole			none			rk/rk1108/apps/peephole		master
+peephole			rk/rk1108/apps/peephole			none			rk/rk1108/apps/peephole			master
 prebuild-images			rk/rk1108/prebuild-images		none			rk/rk1108/prebuild-images		master
 prebuilds			rk/rk1108/prebuilds			none			rk/rk1108/prebuilds			master
 preisp				rk/rk1108/framework/preisp		none			rk/rk1108/framework/preisp		master
 powermanager			linux/external/powermanager		powermanager		linux/external/powermanager		master
 qfm				linux/app/qfm				qfm			linux/app/qfm				master
+qplayer				linux/app/qplayer			qplayer			linux/app/qplayer			master
 recovery			linux/recovery				recovery		linux/recovery				develop
 rk-rootfs-build			linux/rk-rootfs-build			rk-rootfs-build		linux/rk-rootfs-build			master
 rk_pcba_test			linux/external/rk_pcba_test		rk_pcba_test		linux/external/rk_pcba_test		master
