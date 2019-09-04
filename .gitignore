@@ -31,6 +31,7 @@ bin
 rk_tee_user
 rkbin
 rknpu
+rkscript
 rkssd
 rkupdate
 rkwifibt
@@ -130,4 +131,5 @@ wpa_supplicant
 zlib
 RKNPUTOOLs
 qfm
+qplayer
 update_engine
