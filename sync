@@ -97,6 +97,7 @@ prebuild-images			rk/rk1108/prebuild-images		none			rk/rk1108/prebuild-images		m
 prebuilds			rk/rk1108/prebuilds			none			rk/rk1108/prebuilds			master
 preisp				rk/rk1108/framework/preisp		none			rk/rk1108/framework/preisp		master
 powermanager			linux/external/powermanager		powermanager		linux/external/powermanager		master
+qcamera				linux/app/qcamera			qcamera			linux/app/qcamera			master
 qfm				linux/app/qfm				qfm			linux/app/qfm				master
 qplayer				linux/app/qplayer			qplayer			linux/app/qplayer			master
 recovery			linux/recovery				recovery		linux/recovery				develop
