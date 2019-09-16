@@ -34,6 +34,7 @@ distro				linux/distro				distro			linux/distro				master
 dl				linux/buildroot/dl			none			linux/buildroot/dl			master
 dnsmasq				rk/rk1108/external/dnsmasq		none			rk/rk1108/external/dnsmasq		master
 docs				linux/docs				docs			linux/docs				master
+internal_doc			linux/internal_doc			none			linux/internal_doc			master
 docs_1108			rk/rk1108/docs				none			rk/rk1108/docs				master
 face				rk/rk1108/apps/face			none			rk/rk1108/apps/face			master
 ffmpeg				linux/external/ffmpeg			ffmpeg			linux/external/ffmpeg			rockchip/release/4.0
