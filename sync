@@ -28,6 +28,7 @@ camera_engine_rkisp		linux/external/camera_engine_rkisp	camera_engine_rkisp	linu
 cjson				rk/rk1108/external/cjson		none			rk/rk1108/external/cjson		master
 common				rk/rk1108/common			none			rk/rk1108/common			master
 config				rk/rk1108/config			none			rk/rk1108/config			master
+cvr				rk/rk1108/apps/cvr			none			rk/rk1108/apps/cvr			master
 database			rk/rk1108/framework/database		none			rk/rk1108/framework/database		master
 demo				linux/app/demo				demo			linux/app/demo				master
 distro				linux/distro				distro			linux/distro				master
@@ -36,6 +37,7 @@ dnsmasq				rk/rk1108/external/dnsmasq		none			rk/rk1108/external/dnsmasq		master
 docs				linux/docs				docs			linux/docs				master
 internal_doc			linux/internal_doc			none			linux/internal_doc			master
 docs_1108			rk/rk1108/docs				none			rk/rk1108/docs				master
+device_manager			rk/rk1108/apps/device_manager		none			rk/rk1108/apps/device_manager		master
 face				rk/rk1108/apps/face			none			rk/rk1108/apps/face			master
 ffmpeg				linux/external/ffmpeg			ffmpeg			linux/external/ffmpeg			rockchip/release/4.0
 ffmpeg_1108			linux/external/ffmpeg			ffmpeg			linux/external/ffmpeg			rockchip/release/4.1
@@ -97,6 +99,7 @@ peephole			rk/rk1108/apps/peephole			none			rk/rk1108/apps/peephole			master
 prebuild-images			rk/rk1108/prebuild-images		none			rk/rk1108/prebuild-images		master
 prebuilds			rk/rk1108/prebuilds			none			rk/rk1108/prebuilds			master
 preisp				rk/rk1108/framework/preisp		none			rk/rk1108/framework/preisp		master
+process_units			rk/rk1108/framework/process_units	none			rk/rk1108/framework/process_units	master
 powermanager			linux/external/powermanager		powermanager		linux/external/powermanager		master
 qcamera				linux/app/qcamera			qcamera			linux/app/qcamera			master
 qfm				linux/app/qfm				qfm			linux/app/qfm				master
@@ -104,7 +107,9 @@ qplayer				linux/app/qplayer			qplayer			linux/app/qplayer			master
 recovery			linux/recovery				recovery		linux/recovery				develop
 rk-rootfs-build			linux/rk-rootfs-build			rk-rootfs-build		linux/rk-rootfs-build			master
 rk_pcba_test			linux/external/rk_pcba_test		rk_pcba_test		linux/external/rk_pcba_test		master
+rkcamera			rk/rk1108/framework/rkcamera		none			rk/rk1108/framework/rkcamera		master
 rkface				rk/rk1108/framework/rkface		none			rk/rk1108/framework/rkface		master
+rknr				rk/rk1108/framework/rknr		none			rk/rk1108/framework/rknr		master
 rkffplay			linux/app/rkffplay			none			linux/app/rkffplay			master
 repo				tools/repo				repo			none					stable
 rk_tee_user			android/rk/platform/system/rk_tee_user	rk_tee_user		android/rk/platform/system/rk_tee_user	develop-next
