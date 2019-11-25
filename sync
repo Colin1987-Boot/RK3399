@@ -89,6 +89,7 @@ linux-rga			linux/linux-rga				linux-rga		linux/linux-rga				master
 live555				rk/rk1108/external/live555		none			rk/rk1108/external/live555		master
 messenger			rk/rk1108/framework/messenger		none			rk/rk1108/framework/messenger		master
 meta-rockchip			linux/yocto/meta-rockchip		meta-rockchip		linux/yocto/meta-rockchip		yocto-next
+conf			linux/build		build		linux/build		yocto-next
 minigui				linux/external/minigui			minigui			linux/external/minigui			master
 model_loader			rk/rk1108/framework/model_loader	none			rk/rk1108/framework/model_loader	master
 mpp				rk/mpp					mpp			rk/mpp					develop
