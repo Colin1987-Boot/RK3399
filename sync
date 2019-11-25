@@ -41,6 +41,7 @@ device_manager			rk/rk1108/apps/device_manager		none			rk/rk1108/apps/device_man
 face				rk/rk1108/apps/face			none			rk/rk1108/apps/face			master
 ffmpeg				linux/external/ffmpeg			ffmpeg			linux/external/ffmpeg			rockchip/release/4.0
 ffmpeg_1108			linux/external/ffmpeg			ffmpeg			linux/external/ffmpeg			rockchip/release/4.1
+ffmpeg_debian			linux/external/ffmpeg			ffmpeg			linux/external/ffmpeg			rockchip/debian/4.1
 freetype			rk/rk1108/external/freetype		none			rk/rk1108/external/freetype		master
 io				rk/rk1108/external/io			none			rk/rk1108/external/io			master
 gallery				linux/app/gallery			gallery			linux/app/gallery			master
