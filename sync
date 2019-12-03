@@ -96,6 +96,8 @@ model_loader			rk/rk1108/framework/model_loader	none			rk/rk1108/framework/model
 mpp				rk/mpp					mpp			rk/mpp					develop
 mpv				linux/external/mpv			mpv			linux/external/mpv			rockchip/release/0.9
 music				linux/app/music				music			linux/app/music				develop
+multicamera			linux/app/multicamera		multicamera		linux/app/multicamera				master
+multivideoplayer		linux/app/multivideoplayer	multivideoplayer	linux/app/multivideoplayer			master
 nanomsg				rk/rk1108/external/nanomsg		none			rk/rk1108/external/nanomsg		master
 openssl				rk/rk1108/external/openssl		none			rk/rk1108/external/openssl		master
 pcba_test			rk/rk1108/apps/pcba_test		none			rk/rk1108/apps/pcba_test		master
