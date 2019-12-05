@@ -31,6 +31,7 @@ config				rk/rk1108/config			none			rk/rk1108/config			master
 cvr				rk/rk1108/apps/cvr			none			rk/rk1108/apps/cvr			master
 database			rk/rk1108/framework/database		none			rk/rk1108/framework/database		master
 demo				linux/app/demo				demo			linux/app/demo				master
+deviceio_release		linux/external/deviceio_release		deviceio_release	linux/external/deviceio_release		master
 distro				linux/distro				distro			linux/distro				master
 dl				linux/buildroot/dl			none			linux/buildroot/dl			master
 dnsmasq				rk/rk1108/external/dnsmasq		none			rk/rk1108/external/dnsmasq		master
@@ -91,7 +92,9 @@ meta-rockchip			linux/yocto/meta-rockchip		meta-rockchip		linux/yocto/meta-rockc
 minigui				linux/external/minigui			minigui			linux/external/minigui			master
 model_loader			rk/rk1108/framework/model_loader	none			rk/rk1108/framework/model_loader	master
 mpp				rk/mpp					mpp			rk/mpp					develop
-mpv				linux/external/mpv			mpv			linux/external/mpv			rockchip/release/0.9
+mpv				linux/external/mpv			mpv			linux/external/mpv			master
+multicamera			linux/app/multicamera			multicamera		linux/app/multicamera			master
+multivideoplayer		linux/app/multivideoplayer		multivideoplayer	linux/app/multivideoplayer		master
 music				linux/app/music				music			linux/app/music				develop
 nanomsg				rk/rk1108/external/nanomsg		none			rk/rk1108/external/nanomsg		master
 openssl				rk/rk1108/external/openssl		none			rk/rk1108/external/openssl		master

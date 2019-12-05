@@ -9,6 +9,7 @@ camera_engine_cifisp
 camera_engine_rkisp
 cvr
 device_manager
+deviceio_release
 distro
 dl
 docs
@@ -23,9 +24,12 @@ kernel
 libdrm-rockchip
 libmali
 linux-rga
+meta-rockchip
 minigui
 mpp
 mpv
+multicamera
+multivideoplayer
 music
 process_units
 powermanager
