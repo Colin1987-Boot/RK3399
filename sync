@@ -14,6 +14,7 @@ alsa-config			linux/external/alsa-config		alsa-config		linux/external/alsa-confi
 alsa-lib			linux/external/alsa-lib			none			linux/external/alsa-lib			master
 alsa-plugins			linux/external/alsa-plugins		none			linux/external/alsa-plugins		master
 alsa-utils			linux/external/alsa-utils		none			linux/external/alsa-utils		master
+broadcom_bsa			linux/external/broadcom_bsa		none			linux/external/broadcom_bsa		master
 audioservice			linux/external/audioservice		audioservice		linux/external/audioservice		master
 bin                             linux/security/bin                      bin                     linux/security/bin                      master
 bluez-alsa			linux/external/bluez-alsa		bluez-alsa		linux/external/bluez-alsa		master
@@ -42,6 +43,7 @@ device_manager			rk/rk1108/apps/device_manager		none			rk/rk1108/apps/device_man
 face				rk/rk1108/apps/face			none			rk/rk1108/apps/face			master
 ffmpeg				linux/external/ffmpeg			ffmpeg			linux/external/ffmpeg			rockchip/release/4.0
 ffmpeg_1108			linux/external/ffmpeg			ffmpeg			linux/external/ffmpeg			rockchip/release/4.1
+ffmpeg_debian			linux/external/ffmpeg			ffmpeg			linux/external/ffmpeg			rockchip/debian/4.1
 freetype			rk/rk1108/external/freetype		none			rk/rk1108/external/freetype		master
 io				rk/rk1108/external/io			none			rk/rk1108/external/io			master
 gallery				linux/app/gallery			gallery			linux/app/gallery			master
@@ -62,7 +64,7 @@ kernel_1108			rk/rk1108/kernel			none			rk/rk1108/kernel			fastboot
 kernel-stable-rk3308		rk/kernel-stable			none			rk/kernel-stable			stable-4.4-rk3308-linux
 #kernel-stable-rk3326		rk/kernel-stable			none			rk/kernel-stable			stable-4.4-rk3326-linux
 #kernel-stable-rk3328		rk/kernel-stable			none			rk/kernel-stable			stable-4.4-rk3328-linux
-kernel-stable-rk3399		rk/kernel-stable			kernel			rk/kernel-stable			stable-4.4-rk3399-linux-v2.1x
+kernel-stable-rk3399		rk/kernel-stable			kernel			rk/kernel-stable			stable-4.4-rk3399-linux
 kernel-stable-rk3399pro		rk/kernel-stable			kernel			rk/kernel-stable			stable-4.4-rk3399pro-linux
 loader				rk/rk1108/loader			none			rk/rk1108/loader			loader
 lock				rk/rk1108/apps/lock			none			rk/rk1108/apps/lock			master
@@ -89,6 +91,7 @@ linux-rga			linux/linux-rga				linux-rga		linux/linux-rga				master
 live555				rk/rk1108/external/live555		none			rk/rk1108/external/live555		master
 messenger			rk/rk1108/framework/messenger		none			rk/rk1108/framework/messenger		master
 meta-rockchip			linux/yocto/meta-rockchip		meta-rockchip		linux/yocto/meta-rockchip		yocto-next
+conf			linux/build		build		linux/build		yocto-next
 minigui				linux/external/minigui			minigui			linux/external/minigui			master
 model_loader			rk/rk1108/framework/model_loader	none			rk/rk1108/framework/model_loader	master
 mpp				rk/mpp					mpp			rk/mpp					develop
@@ -96,6 +99,8 @@ mpv				linux/external/mpv			mpv			linux/external/mpv			master
 multicamera			linux/app/multicamera			multicamera		linux/app/multicamera			master
 multivideoplayer		linux/app/multivideoplayer		multivideoplayer	linux/app/multivideoplayer		master
 music				linux/app/music				music			linux/app/music				develop
+multicamera			linux/app/multicamera		multicamera		linux/app/multicamera				master
+multivideoplayer		linux/app/multivideoplayer	multivideoplayer	linux/app/multivideoplayer			master
 nanomsg				rk/rk1108/external/nanomsg		none			rk/rk1108/external/nanomsg		master
 openssl				rk/rk1108/external/openssl		none			rk/rk1108/external/openssl		master
 pcba_test			rk/rk1108/apps/pcba_test		none			rk/rk1108/apps/pcba_test		master
