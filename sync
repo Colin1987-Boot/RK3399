@@ -33,7 +33,7 @@ database		rk/rk1108/framework/database		none			none		rk/rk1108/framework/databas
 demo			linux/app/demo				demo			none		linux/app/demo				master
 deviceio_release	linux/external/deviceio_release		deviceio_release	deviceio_release linux/external/deviceio_release	master
 distro			linux/distro				distro			distro		linux/distro				master
-dl			linux/buildroot/dl			none			none		linux/buildroot/dl			master
+#dl			linux/buildroot/dl			none			none		linux/buildroot/dl			master
 dnsmasq			rk/rk1108/external/dnsmasq		none			none		rk/rk1108/external/dnsmasq		master
 docs			linux/docs				docs			docs		linux/docs				master
 docs_1108		rk/rk1108/docs				none			none		rk/rk1108/docs				master
@@ -58,8 +58,8 @@ kernel_1108		rk/rk1108/kernel			none			none		rk/rk1108/kernel		      fastboot
 kernel-stable-rk3308	rk/kernel-stable			none			none		rk/kernel-stable	stable-4.4-rk3308-linux
 #kernel-stable-rk3326	rk/kernel-stable			none			none		rk/kernel-stable	stable-4.4-rk3326-linux
 #kernel-stable-rk3328	rk/kernel-stable			none			none		rk/kernel-stable	stable-4.4-rk3328-linux
-kernel-stable-rk3399	rk/kernel-stable			kernel			kernel		rk/kernel-stable	stable-4.4-rk3399-linux
-kernel-stable-rk3399pro	rk/kernel-stable			kernel			kernel		rk/kernel-stable     stable-4.4-rk3399pro-linux
+kernel-stable-rk3399	rk/kernel-stable			kernel			none		rk/kernel-stable	stable-4.4-rk3399-linux
+kernel-stable-rk3399pro	rk/kernel-stable			kernel			none		rk/kernel-stable     stable-4.4-rk3399pro-linux
 loader			rk/rk1108/loader			none			none		rk/rk1108/loader			loader
 lock			rk/rk1108/apps/lock			none			none		rk/rk1108/apps/lock			master
 libcamerahal		rk/rk1108/external/libcamerahal		none			none		rk/rk1108/external/libcamerahal		master
@@ -113,8 +113,8 @@ rkffplay		linux/app/rkffplay			none			none		linux/app/rkffplay			master
 repo			tools/repo				repo			repo		none					master
 rk_tee_user		android/rk/platform/system/rk_tee_user	rk_tee_user		rk_tee_user android/rk/platform/system/rk_tee_user develop-next
 rkbin			rk/rkbin				rkbin			rkbin		rk/rkbin				master
-rkmedia			linux/rkmedia				rkmedia			rkmedia		linux/rkmedia				master
-rknn-toolkit		rk/rknn-toolkit				rknn-toolkit		rknn-toolkit	rk/rknn-toolkit				master
+rkmedia			linux/rkmedia				rkmedia			rkmedia		linux/external/rkmedia			master
+rknn-toolkit		rk/rknn-toolkit				rknn-toolkit		none		rk/rknn-toolkit				master
 rknn_demo		linux/external/rknn_demo		rknn_demo		rknn_demo	linux/external/rknn_demo		master
 rknpu			linux/external/rknpu			rknpu			rknpu		linux/external/rknpu			master
 rknpu-fw		linux/external/rknpu-fw		    	rknpu-fw		rknpu-fw	linux/external/rknpu-fw			master
