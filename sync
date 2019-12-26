@@ -113,7 +113,7 @@ rkffplay		linux/app/rkffplay			none			none		linux/app/rkffplay			master
 repo			tools/repo				repo			repo		none					master
 rk_tee_user		android/rk/platform/system/rk_tee_user	rk_tee_user		rk_tee_user android/rk/platform/system/rk_tee_user develop-next
 rkbin			rk/rkbin				rkbin			rkbin		rk/rkbin				master
-rkmedia			linux/rkmedia				rkmedia			rkmedia		linux/external/rkmedia			master
+rkmedia			linux/rkmedia				rkmedia			rkmedia		linux/rkmedia				master
 rknn-toolkit		rk/rknn-toolkit				rknn-toolkit		none		rk/rknn-toolkit				master
 rknn_demo		linux/external/rknn_demo		rknn_demo		rknn_demo	linux/external/rknn_demo		master
 rknpu			linux/external/rknpu			rknpu			rknpu		linux/external/rknpu			master
