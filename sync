@@ -121,7 +121,7 @@ rknpu-fw		linux/external/rknpu-fw		    	rknpu-fw		rknpu-fw	linux/external/rknpu-
 RKNPUTOOLs		android/RKNPUTool		    	RKNPUTools		RKNPUTools	android/RKNPUTool	  rk33/mid/8.1/develop
 rkssd			linux/external/rkssd			rkssd			rkssd		linux/external/rkssd			master
 rkscript		linux/external/rkscript			rkscript		rkscript	linux/external/rkscript			master
-rktoolkit		linux/external/rktoolkit		rkscript		rkscript	linux/external/rktoolkit		master
+rktoolkit		linux/external/rktoolkit		rktoolkit		rktoolkit	linux/external/rktoolkit		master
 rkupdate		linux/external/rkupdate			rkupdate		rkupdate	linux/external/rkupdate			master
 rkwifibt		linux/external/rkwifibt			rkwifibt		rkwifibt	linux/external/rkwifibt			master
 rockchip		linux/device/rockchip			device-custom		device		linux/device/rockchip			master
