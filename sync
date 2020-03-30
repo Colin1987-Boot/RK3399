@@ -14,7 +14,7 @@ alsa-config		linux/external/alsa-config		alsa-config		alsa-config	linux/external
 alsa-lib		linux/external/alsa-lib			none			none		linux/external/alsa-lib			master
 alsa-plugins		linux/external/alsa-plugins		none			none		linux/external/alsa-plugins		master
 alsa-utils		linux/external/alsa-utils		none			none		linux/external/alsa-utils		master
-broadcom_bsa		linux/external/broadcom_bsa		none			none		linux/external/broadcom_bsa		master
+broadcom_bsa		linux/external/broadcom_bsa		broadcom_bsa			none		linux/external/broadcom_bsa		master
 audioservice		linux/external/audioservice		audioservice		audioservice	linux/external/audioservice		master
 bin                     linux/security/bin                      bin                     bin		linux/security/bin                      master
 bluez-alsa		linux/external/bluez-alsa		bluez-alsa		bluez-alsa	linux/external/bluez-alsa		master
