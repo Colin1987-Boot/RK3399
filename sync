@@ -138,7 +138,7 @@ tensorflow		linux/external/tensorflow		tensorflow		tensorflow	linux/external/ten
 tools			linux/tools				tools			tools		linux/tools				master
 tools_1108		rk/rk1108/tools				none			none		rk/rk1108/tools				master
 tools_1108_device	rk/rk1108/external/tools		none			none		rk/rk1108/external/tools		master
-u-boot			android/rk/u-boot			u-boot			u-boot		android/rk/u-boot		      next-dev
+#u-boot			android/rk/u-boot			u-boot			u-boot		android/rk/u-boot		      next-dev
 update_engine		linux/external/update_engine		update_engine		update_engine	linux/external/update_engine		master
 updater			rk/rk1108/apps/updater			none			none		rk/rk1108/apps/updater			master
 uvc_app			rk/rk1108/apps/uvc_app			none			none		rk/rk1108/apps/uvc_app			master
