@@ -51,7 +51,7 @@ io                      rk/rk1108/external/io                   none            
 internal_doc            linux/internal_doc                      none                    none		linux/internal_doc                      master
 jhead			rk/rk1108/external/jhead		none			none		rk/rk1108/external/jhead		master
 kernel			rk/kernel				kernel			none		rk/kernel			   develop-4.4
-kernel			rk/kernel				kernel			none		rk/kernel			   develop-4.19
+kernel-4.19		rk/kernel				kernel			none		rk/kernel			   develop-4.19
 kernel_1108		rk/rk1108/kernel			none			none		rk/rk1108/kernel		      fastboot
 #kernel-stable-px30	rk/kernel-stable			none			none		rk/kernel-stable	stable-4.4-px30-linux
 #kernel-stable-px3se	rk/kernel-stable			none			none		rk/kernel-stable	stable-4.4-px3se-linux
@@ -161,6 +161,7 @@ function sync_repo(){
 		path_211=${repo_array[i+4]}
 		branch=${repo_array[i+5]}
 
+		#echo "the name $repo_name, $path_29,$path_github,$path_gitee,$path_211,$branch..."
 		if [ ! -d $repo_name ]; then
 			git clone ssh://10.10.10.29:29418/$path_29 -b $branch $repo_name
 		fi
